@@ -1,7 +1,7 @@
-import { Img } from "../../components";
+import { Img } from "..";
 import React from "react";
 
-export default function SalesSection() {
+export default function HeaderTop() {
   return (
     <>
       {/* sales section */}

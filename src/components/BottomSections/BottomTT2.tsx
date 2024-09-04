@@ -1,7 +1,7 @@
-import { Button, Img, Text, Heading } from "../../components";
+import { Button, Img, Text, Heading } from "..";
 import React from "react";
 
-export default function SalesSection3() {
+export default function BottomTT2() {
   return (
     <>
       {/* sales section */}

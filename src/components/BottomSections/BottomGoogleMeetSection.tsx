@@ -1,7 +1,7 @@
-import { Img, Button, Text, Heading } from "../../components";
+import { Img, Button, Text, Heading } from "..";
 import React from "react";
 
-export default function SalesSection4() {
+export default function BottomGoogleMeetSection() {
   return (
     <>
       {/* sales section */}

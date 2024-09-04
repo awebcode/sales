@@ -1,5 +1,5 @@
-import { Img, Text, Heading } from "../../components";
-import WeeklyOverviewCard from "../../components/WeeklyOverviewCard";
+import { Img, Text, Heading } from "..";
+import WeeklyOverviewCard from "./WeeklyOverviewCard";
 import React, { Suspense } from "react";
 
 const weeklyProgressList = [
@@ -26,7 +26,7 @@ const weeklyProgressList = [
   },
 ];
 
-export default function SalesSection2() {
+export default function WeeklyTimeline() {
   return (
     <>
       {/* sales section */}

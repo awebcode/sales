@@ -53,9 +53,13 @@ const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
       className={`${className} flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap ${shape && shapes[shape]} ${size && sizes[size]} ${variant && variants[variant]?.[color as keyof (typeof variants)[typeof variant]]}`}
       {...restProps}
     >
-      {!!leftIcon && leftIcon}
+      {!!leftIcon && <span className="mr-2 transition-transform duration-300 group-hover:translate-x-[-4px]">
+        {leftIcon}
+      </span>}
       {children}
-      {!!rightIcon && rightIcon}
+      {!!rightIcon && <span className="mr-2 transition-transform duration-300 group-hover:translate-x-[-4px]">
+        {rightIcon}
+      </span>}
     </button>
   );
 };

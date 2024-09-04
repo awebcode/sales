@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import Page from "./index";
+import Page from "./Index";
 
 export const metadata: Metadata = {
   title: "Sales Services - Enhance Your Business Skills",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     }],
     url: "https://www.sales-asikur.vercel.app",
   },
-  
+
   twitter: {
     title: "Sales Services - Enhance Your Business Skills",
     description:
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/img_image_379.png"],
   },
-  
+
 
 };
 

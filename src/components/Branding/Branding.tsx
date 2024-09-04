@@ -1,7 +1,7 @@
 import { Heading, Img } from "../../components";
 import React from "react";
 
-export default function SalesSection1() {
+export default function Branding() {
   return (
     <>
       {/* sales section */}
@@ -26,7 +26,7 @@ export default function SalesSection1() {
                 <div className="flex items-center justify-center gap-[0.38rem]">
                   <div className="relative h-[2.00rem] w-[18%] content-end md:h-auto">
                     <div className="absolute right-[-0.06rem] top-[0.00rem] m-auto flex w-[66%] items-end justify-center gap-[0.25rem] rounded-lg border-[0.455px] border-solid border-white-a700 bg-white-a700 px-[0.13rem]">
-                     
+
                     </div>
                     <div className="mx-auto mb-[0.25rem] flex w-[70%] items-start justify-end">
                       <div className="flex w-[6%] flex-col items-center justify-center bg-white-a700">
