@@ -1,7 +1,7 @@
 import { Img } from "..";
 import React from "react";
 
-export default function HeaderTop() {
+export default function HeroBackgroundImage() {
   return (
     <>
       {/* sales section */}
