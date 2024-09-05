@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import "@/styles/tailwind.css";
 import "../styles/index.css";
 import "../styles/font.css";
+import ScrollToTop from "@/components/ScrollToTop";
 function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
@@ -12,7 +13,10 @@ function RootLayout({ children }: { children: ReactNode }) {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        
+        
+        {children}<ScrollToTop /></body>
     </html>
   );
 }

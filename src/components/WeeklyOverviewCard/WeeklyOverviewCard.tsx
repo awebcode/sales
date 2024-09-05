@@ -26,17 +26,17 @@ export default function WeeklyOverviewCard({
         </div>
         <div className="mx-[0.38rem] mb-[1.25rem] flex flex-col items-center gap-[1.25rem]">
           <Img src={weekImage} width={24} height={24} alt="Week Icon" className="h-[1.50rem] w-[1.50rem]" />
-          {/* <div className="flex flex-col items-center gap-[0.63rem] self-stretch">
+          <div className="flex flex-col items-center gap-[0.63rem] self-stretch">
             <Heading size="headingxs" as="h4" className="!font-redhatdisplay">
               {titleText}
             </Heading>
             <Text size="textxs" as="p" className="self-stretch text-center leading-[150%]">
               {descriptionText}
             </Text>
-          </div> */}
+          </div>
         </div>
       </div>
-      <div className="h-[5.38rem] w-[0.06rem] bg-gray-800" />
+      <div className="h-[5.38rem] w-[0.06rem] sm:h-0 sm:w-0 bg-gray-800" />
     </div>
   );
 }

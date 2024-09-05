@@ -16,7 +16,14 @@ const navigation = [
 ]
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id.replace('#', ''));
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
 
   return (
     <div className="">
@@ -46,9 +53,9 @@ export default function Navbar() {
           </div>
           <div className="flex gap-x-12 sm:hidden">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="text-md font-semibold leading-6  text-gray-200 hover:text-primary cool-anim">
+              <span onClick={() => handleScroll(item.href)} key={item.name}  className="text-md font-semibold leading-6  text-gray-200 hover:text-primary cool-anim">
                 {item.name}
-              </Link>
+              </span>
             ))}
           </div>
           <div className="flex  justify-end sm:hidden">
@@ -97,13 +104,13 @@ export default function Navbar() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <Link
+                    <span
                       key={item.name}
-                      href={item.href}
+                      onClick={() =>{ setMobileMenuOpen(false); handleScroll(item.href)} }
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-200 hover:text-primary"
                     >
                       {item.name}
-                    </Link>
+                    </span>
                   ))}
                 </div>
                 <div className="py-6">

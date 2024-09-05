@@ -40,25 +40,27 @@ export default function SalesPage() {
           </div>
         </div>
         <div className="container-xs mt-[9.38rem] flex flex-col gap-[9.38rem] md:gap-[7.00rem] md:px-[1.25rem] sm:gap-[4.69rem]">
-          <div className="flex flex-col gap-[9.38rem] px-[0.38rem] md:gap-[7.00rem] sm:gap-[4.69rem]">
-            <AfterHeroCards />
+          <div  className="flex flex-col gap-[9.38rem] px-[0.38rem] md:gap-[7.00rem] sm:gap-[4.69rem]">
+             <AfterHeroCards />
             {/* About us section */}
-            <AboutUs />
+            <div id="about"> <AboutUs /></div>
+           
 
           </div>
         </div>
 
         {/* video testimonials section */}
-        <VideoTestimonialsSection />
+        <div id="reviews">  <VideoTestimonialsSection /></div>
 
         {/* WeeklyTimeline */}
         <WeeklyTimeline />
 
         {/* sales team section */}
-        <SalesTeamSection />
+        <div id="services"><SalesTeamSection /></div>
 
         {/* testimonials section */}
-        <Testimonials2 />
+        <div id="case-studies"> <Testimonials2 /></div>
+       
 
         {/*bottom to top 2 no sec */}
         <BottomTT2 />

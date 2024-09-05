@@ -6,7 +6,7 @@ import { Img } from '../../reusable-components/Img'
 
 const HeroSection = () => {
     return (
-        <> <div className="mx-[10.63rem] flex w-[86%] flex-col gap-[2.50rem] md:mx-0 md:w-full"> <div className="flex flex-col items-center gap-[0.50rem]">
+        <> <div id='#' className="mx-[10.63rem] flex w-[86%] flex-col gap-[2.50rem] md:mx-0 md:w-full"> <div className="flex flex-col items-center gap-[0.50rem]">
             <Heading size="headingmd" as="h1" className="!font-redhatdisplay text-center" >
                 Let’s learn & gain skills
             </Heading>
