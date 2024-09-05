@@ -45,7 +45,9 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
       }}
       viewport={{ once: true }}
     >
-      <div style={{ position: "relative",  }}>
+
+      {/* //width: `${width}px`, height: `${height}px` */}
+      <div style={{ position: "relative", }}> 
         <Image
           src={isStatic ? imgSrc : BASE_URL + imgSrc}
           alt={alt}

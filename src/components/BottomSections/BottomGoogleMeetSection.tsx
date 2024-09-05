@@ -48,15 +48,13 @@ export default function BottomGoogleMeetSection() {
                 Schedule A Call
               </Button>
             </div>
-            <div className="container">
-              <Img
-                src="img_rectangle_118.png"
-                width={548}
-                height={350}
-                alt="Background Image"
-                className="h-[21.88rem] w-[48%] rounded-[16px] object-contain md:h-auto md:w-full"
-              />
-            </div>
+            <Img
+              src="img_rectangle_118.png"
+              width={548}
+              height={350}
+              alt="Background Image"
+              className="h-[21.88rem] w-[48%] rounded-[16px] object-contain md:w-full"
+            />
           </div>
         </div>
       </div>

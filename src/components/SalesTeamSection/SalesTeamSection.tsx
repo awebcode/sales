@@ -30,7 +30,7 @@ export default function SalesTeamSection() {
     return (
         <>
             {/* sales team section */}
-            <div className="mt-[8.25rem] self-stretch w-full">
+            <div className="mt-[8.25rem] self-stretch">
                 <div className="flex justify-center bg-gray-900 py-[3.13rem] md:py-[1.25rem]">
                     <div className="container-xs flex justify-center md:px-[1.25rem]">
                         <div className="flex w-full flex-col gap-[1.50rem]">
