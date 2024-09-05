@@ -5,7 +5,7 @@ export default function Branding() {
   return (
     <>
       {/* sales section */}
-      <div className="self-stretch">
+      <div className="self-stretch ">
         <div className="flex justify-center bg-gray-900_02 py-[2.00rem] sm:py-[1.25rem]">
           <div className="container-xs flex items-center justify-center gap-[3.13rem] px-[0.25rem] md:flex-col md:px-[1.25rem]">
             <Heading as="h2">Trusted By</Heading>

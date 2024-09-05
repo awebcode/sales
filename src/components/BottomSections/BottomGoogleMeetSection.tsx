@@ -43,7 +43,7 @@ export default function BottomGoogleMeetSection() {
                     className="h-[1.50rem] w-[1.50rem]"
                   />
                 }
-                className="min-w-[14.25rem] gap-[0.50rem] font-semibold"
+                className="min-w-[14.25rem] gap-[0.50rem] font-semibold md:mb-10"
               >
                 Schedule A Call
               </Button>

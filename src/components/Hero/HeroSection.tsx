@@ -50,7 +50,7 @@ const HeroSection = () => {
                 </Button>
             </div></div>
             {/* Video section */}
-            <div className="flex h-[33.25rem] w-[90%] items-center justify-center rounded-[16px] bg-[url(/images/img_video.png)] bg-cover bg-no-repeat px-[3.50rem] py-[14.38rem] md:h-auto md:w-full md:p-[1.25rem]">
+            <div className="flex h-[33.25rem] w-[90%] items-center justify-center rounded-[16px] bg-[url(/images/img_video.png)] bg-cover bg-no-repeat px-[3.50rem] py-[14.38rem] md:h-full md:min-h-[200px] md:w-full md:p-[1.25rem]">
                 <Button
                     color="white_A700_66"
                     size="lg"

@@ -23,7 +23,7 @@ const AboutUs = () => {
                     className="h-[15.63rem] w-[38%] rounded-lg object-contain sm:w-full"
                 />
             </div>
-            <div className="flex w-full flex-col items-start gap-[2.50rem]">
+            <div className="flex w-full flex-col items-start gap-[2.50rem] py-4">
                 <div className="flex flex-col items-start gap-[1.25rem] self-stretch">
                     <Button
                         color="gray_900_04"

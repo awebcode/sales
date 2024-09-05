@@ -6,7 +6,7 @@ export default function BottomTT2() {
     <>
       {/* sales section */}
       <div className="relative mt-[9.38rem] h-[32.13rem] content-center self-stretch md:h-auto">
-        <div className="container-xs flex justify-center md:px-[1.25rem]">
+        <div className=" sm:hidden container-xs flex justify-center md:px-[1.25rem]">
           <Img
             src="img_bg.png"
             width={1154}
@@ -21,7 +21,7 @@ export default function BottomTT2() {
             width={526}
             height={308}
             alt="Main Image"
-            className="ml-[0.38rem] h-[19.25rem] w-[46%] object-contain md:ml-0 md:w-full"
+            className="ml-[0.38rem] h-[19.25rem]  w-[46%] object-contain md:ml-0 md:w-full md:h-full"
           />
           <div className="flex w-[46%] flex-col items-start gap-[2.50rem] md:w-full">
             <div className="flex flex-col gap-[1.25rem] self-stretch">

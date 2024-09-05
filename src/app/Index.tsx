@@ -22,7 +22,7 @@ export default function SalesPage() {
         <div className="relative h-[73.13rem] self-stretch md:h-auto">
           {/* sales section */}
           <HeroBackgroundImage />
-          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-center gap-[4.88rem] md:gap-[3.63rem] sm:gap-[2.44rem]">
+          <div className="absolute  left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col items-center gap-[4.88rem] md:gap-[3.63rem] sm:gap-[2.44rem]">
             <div className="container-xs md:px-[1.25rem]">
               <Header />
             </div>
@@ -35,15 +35,17 @@ export default function SalesPage() {
               </div>
 
               {/* sales section */}
-              <Branding />
+              <div className=""><Branding /></div>
             </div>
           </div>
         </div>
         <div className="container-xs mt-[9.38rem] flex flex-col gap-[9.38rem] md:gap-[7.00rem] md:px-[1.25rem] sm:gap-[4.69rem]">
           <div  className="flex flex-col gap-[9.38rem] px-[0.38rem] md:gap-[7.00rem] sm:gap-[4.69rem]">
-             <AfterHeroCards />
+            <div className="md:py-20">
+              <AfterHeroCards />
+             </div>
             {/* About us section */}
-            <div id="about"> <AboutUs /></div>
+            <div id="about" className="md:py-10"> <AboutUs /></div>
            
 
           </div>

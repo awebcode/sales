@@ -28,7 +28,7 @@ export default function Testimonials2Card({
                         width={60}
                         height={60}
                         alt="Userimage"
-                        className="h-[3.75rem] w-[3.75rem] rounded-[30px] object-cover"
+                        className="h-[3.75rem] w-[3.75rem] rounded-[30px] object-cover "
                     />
                     <div className="flex flex-1 flex-col items-start gap-[0.25rem]">
                         <Heading size="headingxs" as="h4" className="!font-redhatdisplay">
