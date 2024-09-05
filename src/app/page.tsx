@@ -11,9 +11,9 @@ export const metadata: Metadata = {
     description:
       "Discover our sales services and learn how to boost your business skills. Read case studies, view testimonials, and schedule a call with our experts today.",
     images: [{
-      url: "/images/img_image_379.png",
+      url: "/img_image_379.png",
     }],
-    url: "https://www.sales-asikur.vercel.app",
+    url: "https://sales-asikur.vercel.app",
   },
 
   twitter: {
