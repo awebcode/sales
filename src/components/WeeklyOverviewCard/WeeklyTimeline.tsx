@@ -55,7 +55,7 @@ export default function WeeklyTimeline() {
               width={1138}
               height={38}
               alt="Featured Image"
-              className="h-[2.38rem] w-full md:h-auto"
+              className="h-[2.38rem] w-full md:hidden"
             />
           </div>
         </div>
