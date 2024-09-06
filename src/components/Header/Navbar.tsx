@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
@@ -17,6 +17,24 @@ const navigation = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const handleScroll = (id: string) => {
     const section = document.getElementById(id.replace('#', ''));
     if (section) {
@@ -26,9 +44,11 @@ export default function Navbar() {
 
 
   return (
-    <div className="">
-      <div className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+    <div className="relative">
+      <div className={` inset-x-0 top-0 z-50 backdrop-blur-md transition-transform transform ${
+        isVisible && 'fixed max-w-7xl  mx-auto  translate-y-0' 
+      }`}>
+        <nav aria-label="Global" className="flex items-center justify-between p-2 lg:px-8">
           <div className="flex lg:flex-1">
             <Link href="#" className="-m-1.5 p-1.5">
               <Image
@@ -79,7 +99,7 @@ export default function Navbar() {
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="bg-gray-900/90 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 md:max-w-md md:ring-1 md:ring-gray-900/10">
+          <DialogPanel className="bg-gray-900/90 backdrop-blur-lg fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 md:max-w-md md:ring-1 md:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="#" className="-m-1.5 p-1.5">
                 <Image
